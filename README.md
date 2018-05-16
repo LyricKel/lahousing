@@ -1,2 +1,3 @@
-# lahousing
-A map of residential zoning and transportation lines in LA
+# carto-two-layers
+
+A Carto.js map with two layers

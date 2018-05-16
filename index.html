@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Two layers layer | CARTO</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" rel="stylesheet">
+    <link href="./styles.css" rel="stylesheet">
+  </head>
+   <body>
+ 
+    <div class="map-wrapper">
+      <div id="map"></div>
+      </div>
+     
+      <div class="sidebar">
+        <!-- We create a div where the feature data will go when clicked on: -->
+        <div class="sidebar-feature-content">
+          <div class="h1">
+            <strong>Understanding New Housing Policy in Los Angeles</strong>
+          </div>
+          <div class="textbox">
+            In the City of Los Angeles, there have been many measures and incentives to build more affordable housing.
+            It is estimated that nearly 500,000 new units need to be built in order to accommodate the people moving in to the city while proving the current residents with the information they need.
+            <p>
+              To better understand the measures, on this map we take a look at the residentially zoned lots.
+              Below, you can check which residential zoning class you want to look at to see how these lots might be affected.
+              With the buttons, you can see how economic demographics overlay on these issues (the darker, the more economically disavantaged), 
+              as well as see the location of the major transit lines, both bus and rail.
+            </p>
+          </div>
+        <div class="buttons">
+        <button class="toggle-metric">
+          Demographics Metric
+        </button>
+          <button class="toggle-brt">
+          Transit Lines
+        </button>
+      </div>
+        
+         <div class="checkboxes">
+        <div>
+          <label>
+            <input type="checkbox" class="r1-checkbox" />
+            R1 Zoning
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="checkbox" class="r2-checkbox" />
+            R2 Zoning
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="checkbox" class="r3-checkbox" />
+            R3 Zoning
+          </label>
+        </div>
+           <div>
+          <label>
+            <input type="checkbox" class="rd-checkbox" />
+            RD Zoning
+          </label>
+        </div>
+           </div>
+      </div>
+      </div>
+    
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://cartodb-libs.global.ssl.fastly.net/carto.js/v4.0.0-beta.25/carto.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
